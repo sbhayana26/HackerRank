@@ -1,3 +1,5 @@
+//Problem statement: https://www.hackerrank.com/challenges/compare-the-triplets
+
 #include<iostream>
 using namespace std;
 int main()
