@@ -1,2 +1,2 @@
 # HackerRank
-This repository is intended for uploading the solutions to HackerRank problems by sbhayana26.
+This repository is intended for uploading sbhayana26's solutions to the HackerRank problems.
