@@ -12,24 +12,24 @@ int main()
 			{ cout<<"YES";
 			break;
 			}
-        else if((x1==x2) && (v1<v2))
-            { cout<<"NO";
-            break;
-            }
-        else if ((x1<=x2) && (v1<=v2))
-            { cout<<"NO";
-            break;
-            }
-        else
-            { if(((x1-x2)%(v2-v1))==0)
-    		    { cout<<"YES";
+        	else if((x1==x2) && (v1<v2))
+            		{ cout<<"NO";
+            		break;
+            		}
+        	else if ((x1<=x2) && (v1<=v2))
+            		{ cout<<"NO";
+            		break;
+            		}
+        	else
+            		{ if(((x1-x2)%(v2-v1))==0)
+	    		    { cout<<"YES";
 			    break;
 			    }
-            else
-                { cout<<"NO";
-                break;
+           	        else
+                	    { cout<<"NO";
+	                    break;
+        	            }
+	        	}
                 }
-	        }
-        }
 	return 0;
 	}
