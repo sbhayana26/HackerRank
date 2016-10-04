@@ -7,7 +7,7 @@ int main()
 	{ int x1, v1, x2, v2;
 	cin>>x1>>v1>>x2>>v2;
 	int i;
-	for(i=0; INT_MAX; ++i)
+	for(i=0; ; ++i)
 		{ if ((x2==x1) && (v2==v1))
 			{ cout<<"YES";
 			break;
