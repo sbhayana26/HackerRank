@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/security-bijective-functions
+
 #include<iostream>
 using namespace std;
 //Selection sort
