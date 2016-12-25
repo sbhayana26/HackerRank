@@ -1,0 +1,6 @@
+# https://www.hackerrank.com/challenges/bash-tutorials---looping-and-skipping/submissions/code/34546701
+
+for((i=1;i<=100;i=i+2))
+do
+    echo -e "$i"
+done
