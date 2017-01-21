@@ -1,30 +1,27 @@
-//Needs modification.
 // https://www.hackerrank.com/challenges/pangrams
 
 #include<iostream>
 #include<string.h>
+#include<cstdio>
+#include<cstdlib>
 using namespace std;
 int main()
     { char lowerCase[] = "abcdefghijklmnopqrstuvwxyz";
     char upperCase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char s[];
-    gets(s);
-    int i, j, k[26], k;
+    string test;
+    getline(cin, test);
+    int i, j, k=0;
     for(i=0; i<26; ++i)
-        { for(j=0; j<strlen(s); ++j)
-            { if(lowerCase[i]==s[j] || upperCase[i]==s[j])
-                k[i] = 1;
+        { for(j=0; j<test.length(); ++j)
+            { if(lowerCase[i]==test[j] || upperCase[i]==test[j])
+                { k += 1;
+                break;
+                }
             }
         }
-    for(i=0; i<26; ++i)
-        { if(k[i]==0)
-            { k = 0;
-            break;
-            }
-        }
-    if(k==0)
-        cout<<"not pangram";
-    else
+    if(k==26)
         cout<<"pangram";
+    else
+        cout<<"not pangram";
     return 0;
     }
