@@ -1,0 +1,9 @@
+# https://www.hackerrank.com/challenges/python-tuples
+
+if __name__ == '__main__':
+    n = int(input())
+    line = input().split()    
+    for i in range(n):
+        line[i] = int(line[i])
+    t = tuple(line)
+    print(hash(t))
