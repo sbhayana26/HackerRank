@@ -1,0 +1,21 @@
+# https://www.hackerrank.com/challenges/string-validators
+
+
+if __name__ == '__main__':
+    s = input()
+    k1 = k2 = k3 = k4 = k5 = False
+    for i in s:
+        if i.islower():
+            k1 = k2 = k4 = True
+            continue
+        elif i.isupper():
+            k1 = k2 = k5 = True
+            continue
+        elif i.isdigit():
+            k1 = k3 = True
+            continue
+    print(k1)
+    print(k2)
+    print(k3)
+    print(k4)
+    print(k5)
