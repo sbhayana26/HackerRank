@@ -1,0 +1,14 @@
+# https://www.hackerrank.com/challenges/birthday-cake-candles
+
+if __name__ == "__main__":
+    n = int(input())
+    heights = []
+    heights = input().split()
+    heights = [int(i) for i in heights]
+    heights.sort(reverse = True)
+    count = 1
+    '''for i in range(n):
+        if not heights[i+1] == heights[i]:
+            break
+        count += 1'''
+    print(heights.count(max(heights)))
