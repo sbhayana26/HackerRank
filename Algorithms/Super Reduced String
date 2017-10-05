@@ -1,0 +1,25 @@
+//https://www.hackerrank.com/challenges/reduced-string/problem
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+    { std::string str;
+    cin>>str;
+    int len, i;
+    len = str.length();
+    for(i=0; i<len; ++i)
+        { if(str[i] == str[i+1])
+            { str.erase(i,2);
+            i = -1;
+            }
+        }
+    if(str.length()>0)
+        { cout<<str;
+        }
+    else
+        { cout<<"Empty String";
+        }
+    return 0;
+    }
